@@ -1,4 +1,4 @@
-local status_ok, onedark = pcall(require, "onedark")
+local status_ok, onedarker = pcall(require, "onedarker")
 if not status_ok then
   vim.cmd [[
   try
@@ -10,8 +10,8 @@ if not status_ok then
   ]]
 end
 
-onedark.setup {
-    style = 'warmer'
-}
-onedark.load()
+-- onedark.setup {
+--     style = 'warmer'
+-- }
+-- onedark.load()
 
