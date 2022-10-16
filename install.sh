@@ -23,4 +23,8 @@ unzip DroidSansMono.zip -d ~/.fonts
 fc-cache -fv
 echo "done!"
 
+#zsh
+chsh -s $(which zsh)
+
 ./update_config.sh
+
