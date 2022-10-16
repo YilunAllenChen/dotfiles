@@ -186,7 +186,7 @@ bar {
 }
 
 exec_always xinput set-prop "SYNA8008:00 06CB:CE58 Touchpad" "libinput Tapping Enabled" 1
-exec_always feh --bg-scale ~/Pictures/mountains.jpg
+exec_always feh --bg-scale ~/.config/deer.jpg
 exec_always picom --config ~/.config/picom.conf
 
 default_border none

@@ -1,5 +1,12 @@
 sudo apt install $(paste -sd " " ./requirements)
+
+
+# python related stuff
 pip install -r ./pip_requirements
+
+
+# npm related stuff
+curl -L https://git.io/n-install | bash -s -- -y lts latest 4.1
 npm install -g -s $(paste -sd " " ./npm_requirements)
 
 
@@ -15,3 +22,5 @@ echo "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/DroidSans
 unzip DroidSansMono.zip -d ~/.fonts
 fc-cache -fv
 echo "done!"
+
+./update_config.sh
