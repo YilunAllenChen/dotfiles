@@ -23,5 +23,9 @@ unzip DroidSansMono.zip -d ~/.fonts
 fc-cache -fv
 echo "done!"
 
+# zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+
 ./update_config.sh
 
