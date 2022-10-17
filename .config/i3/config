@@ -188,6 +188,8 @@ bar {
         status_command i3status
 }
 
+bindsym $mod+Shift+s exec "flameshot gui"
+
 exec_always xinput set-prop "SYNA8008:00 06CB:CE58 Touchpad" "libinput Tapping Enabled" 1
 exec_always feh --bg-scale ~/.config/bg1.jpg
 exec_always picom --config ~/.config/picom.conf
