@@ -4,7 +4,7 @@ if not status_ok then
 end
 
 toggleterm.setup({
-	size = 20,
+	size = 50,
 	open_mapping = [[<c-j>]],
 	hide_numbers = true,
 	shade_filetypes = {},
@@ -14,7 +14,7 @@ toggleterm.setup({
 	insert_mappings = true,
 	persist_size = true,
   autochdir = true,
-	direction = "float",
+	direction = "vertical",
 	close_on_exit = true,
 	shell = vim.o.shell,
 	float_opts = {

@@ -1,0 +1,22 @@
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+export FIO_LOGGING_DISABLE_JSON=1
+
+alias sb="source ~/.bashrc"
+alias eb="nvim ~/.bashrc && source ~/.bashrc && echo updated"
+alias py="python"
+alias lg="lazygit"
+
+alias remote="ssh alchen@chvld-alchen2"
+alias er="conda activate fio-app-edo-risk && cd ~/repos/edo-risk"
+alias al="conda activate fio-app-alsenal && cd ~/repos/alsenal/fio/app/alsenal/scripts"
+alias dgp="conda activate fio-app-desk-greek-publisher && cd ~/repos/desk-greek-publisher/"
+alias egp="conda activate fio-app-edo-greek-publisher && cd ~/repos/edo-greek-publisher/"
+alias lgp="conda activate fio-live-greek-publisher && cd ~/repos/live-greek-publisher/"
+alias sgu="conda activate fio-sol-greeks-utils && cd ~/repos/sol-greeks-utils/"
+alias em="conda activate fio-edo-metrics && cd ~/repos/edo-metrics/"
+alias ppb="conda activate fio-app-preliminary-price-bars && cd ~/repos/preliminary-price-bars"
+alias is="conda activate instrument-service && cd ~/repos/instrument-service"
+alias sy="conda activate fio-symbology && cd ~/repos/symbology/"
+alias fb="conda activate fio-app-ficc-bot && cd ~/repos/ficc-bot/"
+alias ks="cd ~/repos/k8s/"

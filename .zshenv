@@ -2,12 +2,15 @@ export ZSH="$HOME/.oh-my-zsh"
 
 source $ZSH/oh-my-zsh.sh
 
-alias sb="source ~/.zshrc"
-alias eb="nvim ~/.zshrc && source ~/.zshrc && echo updated"
 
 ZSH_THEME="eastwood"
 
+alias sb="source ~/.zshrc"
+alias eb="nvim ~/.zshrc && source ~/.zshrc && echo updated"
 alias py="python"
+alias lg="lazygit"
+
+
 alias remote="ssh alchen@chvld-alchen2"
 alias er="conda activate fio-app-edo-risk && cd ~/repos/edo-risk"
 alias al="conda activate fio-app-alsenal && cd ~/repos/alsenal/fio/app/alsenal/scripts"
@@ -19,8 +22,6 @@ alias ppb="conda activate fio-app-preliminary-price-bars && cd ~/repos/prelimina
 alias is="conda activate instrument-service && cd ~/repos/instrument-service"
 alias sy="conda activate fio-symbology && cd ~/repos/symbology/"
 alias ks="cd ~/repos/k8s/"
-alias nv="cd ~/.config/nvim/"
-alias lg="lazygit"
 
 CASE_SENSITIVE="true"
 
