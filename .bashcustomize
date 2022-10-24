@@ -2,8 +2,8 @@
 
 export FIO_LOGGING_DISABLE_JSON=1
 
-alias sb="source ~/.bashrc"
-alias eb="nvim ~/.bashrc && source ~/.bashrc && echo updated"
+alias sb="source ~/.bashcustomize"
+alias eb="nvim ~/.bashcustomize && source ~/.bashrc && echo updated"
 alias py="python"
 alias lg="lazygit"
 
