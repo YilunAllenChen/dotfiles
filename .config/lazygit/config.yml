@@ -2,5 +2,5 @@ gui:
   sidePanelWidth: 0.2 # gives you more space to show things side-by-side
 keybindings:
   universal:
-    quit: 'Q'
-    return: 'q'
+    quit: 'ctrl+q'
+    return: 'ctrl+q'
