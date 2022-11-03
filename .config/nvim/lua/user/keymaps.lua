@@ -67,9 +67,6 @@ keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
--- Search --
-keymap("n", "<C-f>", ":Ag ", opts)
-
 -- Replace --
 keymap("i", "<C-r>", "<ESC>:%s/", opts)
 keymap("n", "<C-r>", ":%s/", opts)
