@@ -81,7 +81,7 @@ telescope.setup {
   },
   pickers = {
     find_files = {
-      path_display = { "absolute" }
+      path_display = { "absolute" },
     },
     -- Default configuration for builtin pickers goes here:
     -- picker_name = {

@@ -2,12 +2,13 @@
 
 export FIO_LOGGING_DISABLE_JSON=1
 
-alias sb="source ~/.bashcustomize"
-alias eb="nvim ~/.bashcustomize && source ~/.bashrc && echo updated"
+alias sb="source ~/.bashrc"
+alias eb="nvim ~/.bashcustomize && source ~/.bashcustomize && echo updated"
 alias py="python"
 alias lg="lazygit"
 
-alias remote="ssh alchen@chvld-alchen2"
+alias remote="ssh alchen@chwld-alchen1"
+alias remotebox="ssh alchen@chvld-alchen2"
 alias er="conda activate fio-app-edo-risk && cd ~/repos/edo-risk"
 alias al="conda activate fio-app-alsenal && cd ~/repos/alsenal/fio/app/alsenal/scripts"
 alias dgp="conda activate fio-app-desk-greek-publisher && cd ~/repos/desk-greek-publisher/"
