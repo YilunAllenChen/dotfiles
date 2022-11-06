@@ -111,6 +111,7 @@ return packer.startup(function(use)
 
   -- search and replace
   use {'windwp/nvim-spectre'}
+  use {'brooth/far.vim'}
 
   -- copy pasting
   use {'ojroques/nvim-osc52'}
