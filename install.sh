@@ -16,9 +16,10 @@ curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/lates
 sudo tar xf lazygit.tar.gz -C /usr/local/bin lazygit
 rm lazygit.tar.gz
 
+# install neovim
+sudo apt install ./nvim-linux64.deb
+
 # nerdfont
-echo "[-] Download fonts [-]"
-echo "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/DroidSansMono.zip"
 unzip DroidSansMono.zip -d ~/.fonts
 fc-cache -fv
 echo "done!"
