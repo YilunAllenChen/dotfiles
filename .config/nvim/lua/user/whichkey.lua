@@ -99,6 +99,7 @@ local mappings = {
   ["R"] = { "<cmd>Telescope oldfiles<cr>", "Old Files" },
   ['o'] = { "<cmd>lua require('spectre').open_visual({select_world=true})<cr>", "Search & Replace"},
   [';'] = { "<cmd>:edit!<cr>", "Refresh"},
+  ['j'] = { "<cmd>:HopWord<cr>", "Refresh"},
 -- Now the '+' register will copy to system clipboard using OSC52
 
   z = {
