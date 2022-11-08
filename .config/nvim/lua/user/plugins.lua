@@ -118,6 +118,9 @@ return packer.startup(function(use)
   -- context
   use {'wellle/context.vim'}
 
+  -- easy motion
+  use {'phaazon/hop.nvim'}
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
