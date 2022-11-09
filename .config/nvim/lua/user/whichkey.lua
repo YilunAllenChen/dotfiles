@@ -100,6 +100,7 @@ local mappings = {
   ['o'] = { "<cmd>lua require('spectre').open_visual({select_world=true})<cr>", "Search & Replace"},
   [';'] = { "<cmd>:edit!<cr>", "Refresh"},
   ['j'] = { "<cmd>:HopWord<cr>", "Refresh"},
+  ['h'] = { "<cmd>:VisitLinkUnderCursor<cr>", "Visit Link"},
 -- Now the '+' register will copy to system clipboard using OSC52
 
   z = {
@@ -139,10 +140,6 @@ local mappings = {
     name = "LSP",
     a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
     c = { "<cmd>ContextToggle<cr>", "Context Toggle"},
-    -- d = {
-    --   "<cmd>Telescope lsp_document_diagnostics<cr>",
-    --   "Document Diagnostics",
-    -- },
     g = {
       "<cmd>lua vim.lsp.buf.implementation()<cr>", "Implementation"
     },

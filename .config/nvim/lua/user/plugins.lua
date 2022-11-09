@@ -120,6 +120,12 @@ return packer.startup(function(use)
 
   -- easy motion
   use {'phaazon/hop.nvim'}
+  
+  -- auto scaling windows
+  use { "beauwilliams/focus.nvim", config = function() require("focus").setup() end }
+
+  -- url opener
+  use {'xiyaowong/link-visitor.nvim', config = function() require("link-visitor").setup() end}
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
