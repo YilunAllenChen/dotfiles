@@ -1,5 +1,5 @@
-cp ./.config ~/ -r
-cp ./.bashcustomize ~/
+cp ~/dotfiles/.config ~/ -r
+cp ~/dotfiles/.bashcustomize ~/
 
 LINE='source ~/.bashcustomize'
 FILE='/home/alchen/.bashrc'

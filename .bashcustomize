@@ -1,12 +1,21 @@
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-export FIO_LOGGING_DISABLE_JSON=1
 
+# general
 alias sb="source ~/.bashrc"
-alias eb="nvim ~/dotfiles/.bashcustomize && bash ~/dotfiles/update_config.sh && source ~/.bashcustomize && echo updated"
+alias eb="nvim ~/dotfiles/.bashcustomize && cp ~/dotfiles/.bashcustomize ~/.bashcustomize && bash ~/dotfiles/update_config.sh && source ~/.bashcustomize && echo updated"
 alias py="python"
 alias lg="lazygit"
+alias cde="conda deactivate"
 
+alias sbx="cd ~/repos/sandbox/"
+alias dot="cd ~/dotfiles"
+
+# compile
+alias nc="nim compile"
+
+# work
+export FIO_LOGGING_DISABLE_JSON=1
 alias remote="ssh alchen@chwld-alchen1"
 alias remotebox="ssh alchen@chvld-alchen2"
 alias er="conda activate fio-app-edo-risk && cd ~/repos/edo-risk"
