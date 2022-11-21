@@ -11,8 +11,9 @@ alias cde="conda deactivate"
 alias sbx="cd ~/repos/sandbox/"
 alias dot="cd ~/dotfiles"
 
-# compile
+# nim
 alias nc="nim compile"
+export PATH=/home/alchen/.nimble/bin:$PATH
 
 # work
 export FIO_LOGGING_DISABLE_JSON=1
