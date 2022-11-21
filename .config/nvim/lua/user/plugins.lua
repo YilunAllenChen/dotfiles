@@ -71,9 +71,11 @@ return packer.startup(function(use)
 	use({ "saadparwaiz1/cmp_luasnip" }) -- snippet completions
 	use({ "hrsh7th/cmp-nvim-lsp" })
 	use({ "hrsh7th/cmp-nvim-lua" })
+
 	-- snippets
-	use({ "L3MON4D3/LuaSnip" }) --snippet engine
-	use({ "rafamadriz/friendly-snippets" }) -- a bunch of snippets to use
+  -- these are overlapping with the lsp configs, so turning them off for now
+	--[[ use({ "L3MON4D3/LuaSnip" }) --snippet engine ]]
+	--[[ use({ "rafamadriz/friendly-snippets" }) -- a bunch of snippets to use ]]
 
 	-- LSP
 	use({ "neovim/nvim-lspconfig" }) -- enable LSP
@@ -133,8 +135,6 @@ return packer.startup(function(use)
   -- coc
   use {'neoclide/coc.nvim', branch = 'release'}
 
-  -- nim
-  use "alaviss/nim.nvim"
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
