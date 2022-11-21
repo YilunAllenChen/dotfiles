@@ -1,9 +1,35 @@
 {
-  "suggest.noselect": true,
   "languageserver": {
     "nim": {
       "command": "nimlsp",
       "filetypes": ["nim"]
     }
+  },
+  "coc.preferences.enableMessageDialog": true,
+  "dialog.floatBorderHighlight": "FloatBorder",
+  "suggest.noselect": true,
+  "suggest.floatConfig": {
+    "border": true,
+    "rounded": true,
+    "winblend": 15,
+    "borderhighlight": "FloatBorder"
+  },
+  "hover.floatConfig": {
+    "border": true,
+    "rounded": true,
+    "winblend": 15,
+    "borderhighlight": "FloatBorder"
+  },
+  "signature.floatConfig": {
+    "border": true,
+    "rounded": true,
+    "winblend": 15,
+    "borderhighlight": "FloatBorder"
+  },
+  "diagnostic.floatConfig": {
+    "border": true,
+    "rounded": true,
+    "winblend": 15,
+    "borderhighlight": "FloatBorder"
   }
 }

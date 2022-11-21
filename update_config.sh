@@ -1,4 +1,4 @@
-cp ~/dotfiles/config ~/.config -r
+cp -R ~/dotfiles/config/. ~/.config
 cp ~/dotfiles/.bashcustomize ~/
 
 LINE='source ~/.bashcustomize'

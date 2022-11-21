@@ -48,6 +48,7 @@ vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
 
 
 
+-- COC Settings
 -- Some servers have issues with backup files, see #649.
 vim.opt.backup = false
 vim.opt.writebackup = false
