@@ -130,6 +130,8 @@ return packer.startup(function(use)
   -- smooth scrolling
   use 'karb94/neoscroll.nvim'
 
+  -- coc
+  use {'neoclide/coc.nvim', branch = 'release'}
 
   -- nim
   use "alaviss/nim.nvim"

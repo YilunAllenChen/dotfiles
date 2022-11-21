@@ -12,7 +12,7 @@ alias sbx="cd ~/repos/sandbox/"
 alias dot="cd ~/dotfiles"
 
 # compile
-alias nc="nim compile"
+alias nr="nim c -r"
 
 # work
 export FIO_LOGGING_DISABLE_JSON=1
