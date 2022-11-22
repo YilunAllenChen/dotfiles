@@ -121,7 +121,8 @@ return packer.startup(function(use)
   use {'wellle/context.vim'}
 
   -- easy motion
-  use {'phaazon/hop.nvim'}
+  --[[ use {'phaazon/hop.nvim'} ]]
+  use {'ggandor/leap.nvim'}
 
   -- auto scaling windows
   use { "beauwilliams/focus.nvim", config = function() require("focus").setup() end }
@@ -134,6 +135,8 @@ return packer.startup(function(use)
 
   -- coc
   use {'neoclide/coc.nvim', branch = 'release'}
+
+  -- leap
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
