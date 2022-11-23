@@ -139,11 +139,11 @@ local mappings = {
 
   l = {
     name = "LSP",
-    a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
+    --[[ a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" }, ]]
     c = { "<cmd>ContextToggle<cr>", "Context Toggle"},
-    g = {
-      "<cmd>lua vim.lsp.buf.implementation()<cr>", "Implementation"
-    },
+    --[[ g = { ]]
+    --[[   "<cmd>lua vim.lsp.buf.implementation()<cr>", "Implementation" ]]
+    --[[ }, ]]
     f = { "<cmd>lua vim.lsp.buf.format{async=true}<cr>", "Format" },
     i = { "<cmd>LspInfo<cr>", "Info" },
     I = { "<cmd>LspInstallInfo<cr>", "Installer Info" },
