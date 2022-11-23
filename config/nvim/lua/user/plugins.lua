@@ -121,8 +121,8 @@ return packer.startup(function(use)
   use {'wellle/context.vim'}
 
   -- easy motion
-  --[[ use {'phaazon/hop.nvim'} ]]
-  use {'ggandor/leap.nvim'}
+  use {'phaazon/hop.nvim'}
+  --[[ use {'ggandor/leap.nvim'} ]]
 
   -- auto scaling windows
   use { "beauwilliams/focus.nvim", config = function() require("focus").setup() end }
