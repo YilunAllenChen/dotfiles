@@ -136,6 +136,9 @@ return packer.startup(function(use)
   -- coc
   use {'neoclide/coc.nvim', branch = 'release'}
 
+  -- multi-select
+  use {'mg979/vim-visual-multi'}
+
   -- leap
 
 	-- Automatically set up your configuration after cloning packer.nvim
