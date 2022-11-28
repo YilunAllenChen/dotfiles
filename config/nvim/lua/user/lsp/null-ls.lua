@@ -11,29 +11,11 @@ local diagnostics = null_ls.builtins.diagnostics
 
 
 null_ls.setup({
-	debug = false,
+	debug = true,
 	sources = {
 		formatting.prettier.with({ extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } }),
 		formatting.black.with({ extra_args = { "--fast" } }),
 		formatting.stylua,
     -- diagnostics.flake8
 	},
-})
-
-local null_ls_formatter_status_ok, formatter = pcall(require, "null-ls.formatters")
-if not null_ls_formatter_status_ok then
-	return
-end
-
-formatter.setup({
-  {command = "black", filetypes = { "python" } },
-})
-
-local null_ls_linter_status_ok, linter = pcall(require, "null-ls.linters")
-if not null_ls_linter_status_ok then
-	return
-end
-
-linter.setup({
-  { command = "flake8", filetype = { "python"} },
 })
