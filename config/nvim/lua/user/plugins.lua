@@ -63,6 +63,7 @@ return packer.startup(function(use)
 	use("lunarvim/darkplus.nvim")
 	use {"AlphaTechnolog/onedarker.nvim"}
   use 'navarasu/onedark.nvim'
+  use 'tiagovla/tokyodark.nvim'
 
 	-- cmp plugins
 	use({ "hrsh7th/nvim-cmp" }) -- The completion plugin
@@ -139,7 +140,9 @@ return packer.startup(function(use)
   -- multi-select
   use {'mg979/vim-visual-multi'}
 
-  -- leap
+
+  -- python related
+  use {"numirias/semshi"} -- sematics highlight
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
