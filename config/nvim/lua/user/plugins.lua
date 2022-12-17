@@ -128,9 +128,6 @@ return packer.startup(function(use)
   -- auto scaling windows
   use { "beauwilliams/focus.nvim", config = function() require("focus").setup() end }
 
-  -- url opener
-  use {'xiyaowong/link-visitor.nvim', config = function() require("link-visitor").setup() end}
-
   -- smooth scrolling
   use 'karb94/neoscroll.nvim'
 
