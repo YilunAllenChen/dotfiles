@@ -3,6 +3,10 @@
     "nim": {
       "command": "nimlsp",
       "filetypes": ["nim"]
+    },
+    "ocaml": {
+      "command": "ocamllsp",
+      "filetypes": ["ocaml", "reason"]
     }
   },
   "coc.preferences.enableMessageDialog": true,
