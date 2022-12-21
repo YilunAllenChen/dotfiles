@@ -129,12 +129,6 @@ return packer.startup(function(use)
   -- autoscale windows
   use { "beauwilliams/focus.nvim", config = function() require("focus").setup() end }
 
-  -- tabs
-  --[[ use {'romgrk/barbar.nvim', wants = 'nvim-web-devicons'} ]]
-
-  -- url opener
-  use {'xiyaowong/link-visitor.nvim', config = function() require("link-visitor").setup() end}
-
   -- smooth scrolling
   use 'karb94/neoscroll.nvim'
 
