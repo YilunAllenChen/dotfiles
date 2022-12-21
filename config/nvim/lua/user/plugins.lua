@@ -125,8 +125,12 @@ return packer.startup(function(use)
   use {'phaazon/hop.nvim'}
   --[[ use {'ggandor/leap.nvim'} ]]
 
-  -- auto scaling windows
+  -- windows management
+  -- autoscale windows
   use { "beauwilliams/focus.nvim", config = function() require("focus").setup() end }
+
+  -- tabs
+  --[[ use {'romgrk/barbar.nvim', wants = 'nvim-web-devicons'} ]]
 
   -- url opener
   use {'xiyaowong/link-visitor.nvim', config = function() require("link-visitor").setup() end}
