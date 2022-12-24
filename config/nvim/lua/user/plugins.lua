@@ -138,10 +138,6 @@ return packer.startup(function(use)
   -- multi-select
   use {'mg979/vim-visual-multi'}
 
-
-  -- python related
-  use {"numirias/semshi"} -- sematics highlight
-
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then

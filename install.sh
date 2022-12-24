@@ -1,5 +1,8 @@
 sudo apt install $(paste -sd " " ./requirements)
 
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+
 
 # python related stuff
 pip install -r ./pip_requirements
@@ -16,8 +19,21 @@ curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/lates
 sudo tar xf lazygit.tar.gz -C /usr/local/bin lazygit
 rm lazygit.tar.gz
 
+# packer
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+
+
 # install neovim
-sudo apt install ./nvim-linux64.deb
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+chmod u+x nvim.appimage
+./nvim.appimage --appimage-extract
+./squashfs-root/AppRun --version
+
+# Optional: exposing nvim globally.
+sudo mv squashfs-root /
+sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
+nvim
 
 # nerdfont
 unzip DroidSansMono.zip -d ~/.fonts
@@ -30,3 +46,4 @@ cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 
 ./update_config.sh
 
+nvim +PackerSync
