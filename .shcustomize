@@ -1,9 +1,16 @@
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
-
 # general
-alias sb="source ~/.bashrc"
-alias eb="nvim ~/dotfiles/.bashcustomize && cp ~/dotfiles/.bashcustomize ~/.bashcustomize && bash ~/dotfiles/update_config.sh && source ~/.bashcustomize && echo updated"
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+  [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+  alias sb="source ~/.bashrc"
+  alias sb="source ~/.bashrc"
+  alias eb="nvim ~/dotfiles/.shcustomize && cp ~/dotfiles/.shcustomize ~/.shcustomize && bash ~/dotfiles/update_config.sh && source ~/.shcustomize && echo updated"
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+  [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+  alias sb="source ~/.zshrc"
+  alias sb="source ~/.zshrc"
+  alias eb="nvim ~/dotfiles/.shcustomize && cp ~/dotfiles/.shcustomize ~/.shcustomize && bash ~/dotfiles/update_config.sh && source ~/.shcustomize && echo updated"
+fi
+
 alias py="python"
 alias lg="lazygit"
 alias cde="conda deactivate"
