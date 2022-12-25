@@ -123,7 +123,6 @@ return packer.startup(function(use)
 
   -- easy motion
   use {'phaazon/hop.nvim'}
-  --[[ use {'ggandor/leap.nvim'} ]]
 
   -- windows management
   -- autoscale windows
@@ -137,6 +136,9 @@ return packer.startup(function(use)
 
   -- multi-select
   use {'mg979/vim-visual-multi'}
+
+  -- python
+  use {'Vimjas/vim-python-pep8-indent'}
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
