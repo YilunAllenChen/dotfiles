@@ -80,9 +80,9 @@ local bubbles_theme = {
   replace = { a = { fg = colors.black, bg = colors.red } },
 
   inactive = {
-    a = { fg = colors.white, bg = colors.black },
-    b = { fg = colors.white, bg = colors.black },
-    c = { fg = colors.black, bg = colors.black },
+    a = { fg = colors.white },
+    b = { fg = colors.white },
+    c = { fg = colors.black },
   },
 }
 

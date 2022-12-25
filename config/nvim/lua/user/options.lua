@@ -52,6 +52,7 @@ vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
 -- Some servers have issues with backup files, see #649.
 vim.opt.backup = false
 vim.opt.writebackup = false
+vim.opt.clipboard = "unnamedplus"
 
 -- Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 -- delays and poor user experience.
@@ -95,5 +96,5 @@ end
 keyset("n", "K", '<CMD>lua _G.show_docs()<CR>', {silent = true})
 
 -- Symbol renaming.
-keyset("n", "<leader>rn", "<Plug>(coc-rename)", {silent = true})
+keyset("n", "<leader>nn", "<Plug>(coc-rename)", {silent = true})
 
