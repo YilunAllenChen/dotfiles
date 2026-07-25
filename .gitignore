@@ -1,0 +1,10 @@
+# pi - never commit secrets or machine-local state
+pi/auth.json
+pi/trust.json
+pi/models-store.json
+pi/sessions/
+pi/npm/
+pi/git/
+*.key
+*.pem
+.env

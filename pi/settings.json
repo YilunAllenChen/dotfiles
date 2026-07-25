@@ -1,0 +1,18 @@
+{
+  "lastChangelogVersion": "0.82.1",
+  "theme": "dark",
+  "defaultProvider": "openrouter",
+  "defaultModel": "minimax/minimax-m3",
+  "packages": [
+    "npm:pi-web-access",
+    "npm:pi-caveman"
+  ],
+  "hideThinkingBlock": true,
+  "outputPad": 0,
+  "quietStartup": true,
+  "doubleEscapeAction": "tree",
+  "defaultThinkingLevel": "low",
+  "compaction": {
+    "enabled": true
+  }
+}

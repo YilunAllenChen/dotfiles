@@ -36,3 +36,11 @@ fi
 
 apt update
 apt install -y fd-find ripgrep entr flameshot
+
+# pi (terminal coding agent) config
+DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+mkdir -p ~/.pi/agent/extensions
+ln -sf "$DOTFILES_DIR/pi/settings.json" ~/.pi/agent/settings.json
+for f in "$DOTFILES_DIR"/pi/extensions/*.ts; do
+	ln -sf "$f" ~/.pi/agent/extensions/"$(basename "$f")"
+done
